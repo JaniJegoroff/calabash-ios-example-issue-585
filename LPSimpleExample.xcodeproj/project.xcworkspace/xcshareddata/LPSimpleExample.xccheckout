@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>02995069-1316-4C9F-9C39-C9FC51FE0EB0</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>95FB4C8285A6A685E72F32A7B790DBB3EFF865C5</key>
+		<string>https://github.com/calabash/calabash-js.git</string>
+		<key>F13D0B63290C6F29C8BD0DF689B82930173FD3DA</key>
+		<string>https://github.com/JaniJegoroff/calabash-ios-server.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>95FB4C8285A6A685E72F32A7B790DBB3EFF865C5</key>
+		<string>calabash-ios-server/calabash-js/</string>
+		<key>F13D0B63290C6F29C8BD0DF689B82930173FD3DA</key>
+		<string>calabash-ios-server/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JaniJegoroff/calabash-ios-server.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F13D0B63290C6F29C8BD0DF689B82930173FD3DA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F13D0B63290C6F29C8BD0DF689B82930173FD3DA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>calabash-ios-server</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>95FB4C8285A6A685E72F32A7B790DBB3EFF865C5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>calabash-js</string>
+		</dict>
+	</array>
+</dict>
+</plist>
