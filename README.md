@@ -13,6 +13,13 @@ Environment
 
 `iPhone 6 8.1 simulator`
 
+Modifications to original LPSimpleExample
+==========
+
+Small changes to LPAppDelegate and LPThirdViewController (changes marked with comment `// Jani`)
+
+Added NotificationScreenViewController
+
 Steps to reproduce
 ==========
 
