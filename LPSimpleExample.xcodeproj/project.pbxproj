@@ -126,7 +126,6 @@
 		16FE90E41A0EC6C100BEA2E6 /* NotificationScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationScreenViewController.h; sourceTree = "<group>"; };
 		16FE90E51A0EC6C100BEA2E6 /* NotificationScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationScreenViewController.m; sourceTree = "<group>"; };
 		16FE90E61A0EC6C100BEA2E6 /* NotificationScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationScreenViewController.xib; sourceTree = "<group>"; };
-		30D4C90EEBBC44A69EACCBD4 /* libPods-LPSimpleExample-cal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LPSimpleExample-cal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B126C4C01A0D20EB005338E8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B137ADD2143F6EBF007184CB /* LPSimpleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPSimpleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B137ADD6143F6EBF007184CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -384,7 +383,6 @@
 				B137ADD6143F6EBF007184CB /* UIKit.framework */,
 				B137ADD8143F6EBF007184CB /* Foundation.framework */,
 				B137ADDA143F6EBF007184CB /* CoreGraphics.framework */,
-				30D4C90EEBBC44A69EACCBD4 /* libPods-LPSimpleExample-cal.a */,
 				ba062f8db2cc162e28bbeebc /* CFNetwork.framework */,
 				d7d7b6b215e7713f51d877fb /* calabash.framework */,
 			);
@@ -793,7 +791,7 @@
 		B137ADC9143F6EBF007184CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Xamarin;
 			};
 			buildConfigurationList = B137ADCC143F6EBF007184CB /* Build configuration list for PBXProject "LPSimpleExample" */;
@@ -1025,15 +1023,19 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1064,14 +1066,17 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -1097,6 +1102,7 @@
 				INFOPLIST_FILE = "LPSimpleExample/LPSimpleExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lesspainful.example.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "61cc1cc9-94a4-4582-aa7e-f15dba0c5e07";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1113,6 +1119,7 @@
 				GCC_PREFIX_HEADER = "LPSimpleExample/LPSimpleExample-Prefix.pch";
 				INFOPLIST_FILE = "LPSimpleExample/LPSimpleExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lesspainful.example.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "61cc1cc9-94a4-4582-aa7e-f15dba0c5e07";
 				TARGETED_DEVICE_FAMILY = "1,2";
