@@ -1,0 +1,29 @@
+<%
+
+require 'run_loop'
+xamarin_dir = "#{ENV['HOME']}/.xamarin"
+
+ss_path = "./screenshots/"
+FileUtils.mkdir_p(ss_path)
+
+if ENV["USER"] == "jenkins"
+  keep_sim_open_after = "0"
+else
+  keep_sim_open_after = "1"
+end
+
+default_app = "./Products/app/LPSimpleExample.app"
+app = ENV["APP"] || ENV["APP_BUNDLE_PATH"] || default_app
+
+%>
+
+verbose: CALABASH_FULL_CONSOLE_OUTPUT=1 DEBUG=1
+ss_path: SCREENSHOT_PATH=<%= ss_path %>
+
+app:           APP=<%= app %>
+simulator:     -p app -p ss_path --tags ~@device_only --tags ~@device NO_STOP=<%= keep_sim_open_after %>
+default:       -p simulator RESET_BETWEEN_SCENARIOS=1 DEBUG=1 DEBUG_READ=1
+
+# required only for devices
+bundle_id:    BUNDLE_ID=com.lesspainful.example.LPSimpleExample
+
